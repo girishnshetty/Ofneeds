@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ofneeds.com/sitemap.xml
+
+# Disallow admin/backend paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_/

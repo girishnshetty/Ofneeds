@@ -1,0 +1,34 @@
+type UserRole = 
+ variant {
+   admin;
+   guest;
+   user;
+ };
+type UserProfile = record {name: text;};
+type Time = int;
+type Inquiry = 
+ record {
+   company: text;
+   email: text;
+   message: text;
+   name: text;
+   phone: opt text;
+   productInterest: text;
+   quantity: text;
+   timestamp: Time;
+ };
+service : {
+  _initializeAccessControl: () -> ();
+  assignCallerUserRole: (user: principal, role: UserRole) -> ();
+  getAllInquiries: (null) -> (vec record {
+                                    text;
+                                    Inquiry;
+                                  }) query;
+  getCallerUserProfile: () -> (opt UserProfile) query;
+  getCallerUserRole: () -> (UserRole) query;
+  getUserProfile: (user: principal) -> (opt UserProfile) query;
+  isCallerAdmin: () -> (bool) query;
+  saveCallerUserProfile: (profile: UserProfile) -> ();
+  submitInquiry: (name: text, company: text, email: text, phone: opt text,
+   productInterest: text, quantity: text, message: text) -> ();
+}

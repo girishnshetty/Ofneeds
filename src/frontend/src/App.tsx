@@ -18,6 +18,7 @@ import LanyardsPage from "./pages/LanyardsPage";
 import TrophiesPage from "./pages/TrophiesPage";
 import WelcomeGiftsPage from "./pages/WelcomeGiftsPage";
 import WelcomeGoodiesPage from "./pages/WelcomeGoodiesPage";
+import GalleryPage from "./pages/GalleryPage";
 
 function Layout() {
   return (
@@ -95,6 +96,12 @@ const welcomeGoodiesRoute = createRoute({
   component: WelcomeGoodiesPage,
 });
 
+const galleryRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/gallery",
+  component: GalleryPage,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   adminRoute,
@@ -106,6 +113,7 @@ const routeTree = rootRoute.addChildren([
   jacketsRoute,
   customizedJacketsRoute,
   welcomeGoodiesRoute,
+  galleryRoute,
 ]);
 
 const router = createRouter({ routeTree });

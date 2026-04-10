@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Navy / Gold / Cream brand palette */
+    --background: 0.97 0.006 75;
+    --foreground: 0.2 0.03 258;
+
+    --card: 1 0 0;
+    --card-foreground: 0.2 0.03 258;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.2 0.03 258;
+
+    /* Navy primary */
+    --primary: 0.21 0.073 249;
+    --primary-foreground: 1 0 0;
+
+    /* Light cream secondary */
+    --secondary: 0.94 0.008 75;
+    --secondary-foreground: 0.21 0.073 249;
+
+    /* Muted cream */
+    --muted: 0.94 0.008 75;
+    --muted-foreground: 0.5 0.02 258;
+
+    /* Gold accent */
+    --accent: 0.7 0.12 73;
+    --accent-foreground: 0.21 0.073 249;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.9 0.005 258;
+    --input: 0.9 0.005 258;
+    --ring: 0.21 0.073 249;
+
+    --chart-1: 0.21 0.073 249;
+    --chart-2: 0.7 0.12 73;
+    --chart-3: 0.55 0.1 200;
+    --chart-4: 0.65 0.08 100;
+    --chart-5: 0.45 0.12 50;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+}

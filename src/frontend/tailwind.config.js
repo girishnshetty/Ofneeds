@@ -14,6 +14,7 @@ export default {
         body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        comfortaa: ['"Comfortaa"', 'cursive', 'sans-serif'],
       },
       colors: {
         border: 'oklch(var(--border))',

@@ -152,7 +152,9 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 <a
-                  href="tel:+917090795666"
+                  href="https://wa.me/917090795666"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white transition-colors duration-200"
                 >
                   +91 70907 95666

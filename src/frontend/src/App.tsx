@@ -6,7 +6,7 @@ import {
   createRoute,
   createRouter,
 } from "@tanstack/react-router";
-import WhatsAppWidget from "./components/WhatsAppWidget";
+
 import AdminGuard from "./components/admin/AdminGuard";
 import AdminInquiriesPage from "./pages/AdminInquiriesPage";
 import CorporateGiftsPage from "./pages/CorporateGiftsPage";
@@ -25,7 +25,7 @@ function Layout() {
     <>
       <Outlet />
       <Toaster />
-      <WhatsAppWidget />
+
     </>
   );
 }

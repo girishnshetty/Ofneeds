@@ -101,7 +101,7 @@ export function AboutSection() {
             <button
               type="button"
               onClick={() => scrollTo("contact")}
-              className="w-fit rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-all duration-200 hover:opacity-90"
+              className="self-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-all duration-200 hover:opacity-90"
               data-ocid="about.primary_button"
             >
               Start Your Order

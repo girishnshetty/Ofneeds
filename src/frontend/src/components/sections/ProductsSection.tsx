@@ -10,7 +10,6 @@ const products = [
     name: "T-Shirt",
     price: "₹299",
     moq: "MOQ: 50 pcs",
-    gradient: "from-blue-50 to-blue-100",
     icon: Shirt,
     image: "/assets/products/tshirt.png",
   },
@@ -18,53 +17,50 @@ const products = [
     name: "Corporate Jacket",
     price: "₹899",
     moq: "MOQ: 25 pcs",
-    gradient: "from-slate-50 to-slate-100",
     icon: Shirt,
-    image: "/assets/products/jacket.png",
+    image: "/assets/products/Jacket photo.png",
   },
   {
     name: "Embroidered Cap",
     price: "₹199",
     moq: "MOQ: 50 pcs",
-    gradient: "from-amber-50 to-amber-100",
     icon: Award,
-    image: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&q=80&w=600",
+    image: "/assets/products/caps.png",
   },
   {
     name: "Steel Sipper Bottle",
     price: "₹249",
     moq: "MOQ: 50 pcs",
-    gradient: "from-teal-50 to-teal-100",
     icon: Package,
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&q=80&w=600",
+    image: "/assets/products/sipper bottle.png",
   },
   {
     name: "Back Bags",
     price: "₹799",
     moq: "MOQ: 50 pcs",
-    gradient: "from-purple-50 to-purple-100",
     icon: Briefcase,
+    image: "/assets/products/bag packs.png",
   },
   {
     name: "Crystal Trophy",
     price: "₹899",
     moq: "MOQ: 10 pcs",
-    gradient: "from-yellow-50 to-yellow-100",
     icon: Award,
+    image: "/assets/products/trophys.png",
   },
   {
     name: "Premium Notebook",
     price: "₹249",
     moq: "MOQ: 50 pcs",
-    gradient: "from-orange-50 to-orange-100",
     icon: Package,
+    image: "/assets/products/notebook.png",
   },
   {
     name: "Eco Tote Bag",
     price: "₹179",
     moq: "MOQ: 50 pcs",
-    gradient: "from-green-50 to-green-100",
     icon: Leaf,
+    image: "/assets/products/tote bag.png",
   },
 ];
 
@@ -102,10 +98,10 @@ export function ProductsSection() {
               data-ocid={`product.item.${i + 1}`}
             >
               <div
-                className={`relative flex h-56 w-full items-center justify-center overflow-hidden bg-gradient-to-br ${p.gradient}`}
+                className="relative flex h-56 w-full items-center justify-center overflow-hidden p-6 bg-white"
               >
                 {p.image ? (
-                  <img src={p.image} alt={p.name} className="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+                  <img src={p.image} alt={p.name} className="h-full w-full object-contain transition-transform duration-500 hover:scale-110" />
                 ) : (
                   <p.icon className="h-16 w-16 text-primary opacity-25" />
                 )}

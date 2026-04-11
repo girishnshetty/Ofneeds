@@ -47,7 +47,7 @@ export default function LandingFooter() {
           <div>
             <h4 className="text-white font-semibold mb-3">Contact Us</h4>
             <ul className="space-y-2 text-sm text-blue-200">
-              <li>📞 +91 70907 95666</li>
+              <li>📞 <a href="https://wa.me/917090795666" target="_blank" rel="noopener noreferrer" className="hover:text-[#c9a84c] transition-colors">+91 70907 95666</a></li>
               <li>✉️ hello@ofneeds.com</li>
               <li>
                 📍 #31, 3rd Main BDA Road, Kalyana Nagar,

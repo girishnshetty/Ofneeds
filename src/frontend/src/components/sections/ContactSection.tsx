@@ -82,7 +82,14 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1">PHONE</p>
-                    <p className="font-semibold text-primary">+91 70907 95666</p>
+                    <a
+                      href="https://wa.me/917090795666"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-primary hover:text-accent transition-colors duration-200"
+                    >
+                      +91 70907 95666
+                    </a>
                   </div>
                 </div>
 

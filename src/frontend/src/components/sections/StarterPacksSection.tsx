@@ -9,9 +9,9 @@ export function StarterPacksSection() {
   const packs = [
     {
       badge: "Most Popular",
-      image: "/assets/generated/essential-welcome-kit-599.dim_800x600.jpg",
+      image: "/assets/generated/ofneeds_essential_kit_v2.png",
       imageAlt:
-        "₹599 starter pack for employees - Budget corporate welcome kit India",
+        "Premium corporate welcome kit India - Customized employee gift set by OfNeeds",
       title: "Essential Welcome Kit",
       price: "₹599",
       includes: ["T-Shirt", "Notebook", "Pen", "Welcome Card"],
@@ -20,9 +20,9 @@ export function StarterPacksSection() {
     },
     {
       badge: "Premium Choice",
-      image: "/assets/generated/starter-pack-premium.dim_600x500.jpg",
+      image: "/assets/generated/ofneeds_premium_kit_v2.png",
       imageAlt:
-        "₹1199 premium starter pack for employees - Corporate welcome kit with merchandise",
+        "Luxury corporate gift set for employees - Premium welcome kit India",
       title: "Premium Welcome Kit",
       price: "₹1199",
       includes: [
@@ -79,7 +79,7 @@ export function StarterPacksSection() {
                   <img
                     src={pack.image}
                     alt={pack.imageAlt}
-                    className="h-64 w-full object-cover"
+                    className="h-80 w-full object-cover"
                     loading="lazy"
                     width={600}
                     height={500}

@@ -98,7 +98,7 @@ export function ProductsSection() {
               data-ocid={`product.item.${i + 1}`}
             >
               <div
-                className="relative flex h-64 w-full items-center justify-center overflow-hidden p-4 bg-white"
+                className="relative flex h-72 w-full items-center justify-center overflow-hidden p-2 bg-white"
               >
                 {p.image ? (
                   <img src={p.image} alt={p.name} className="h-full w-full object-contain transition-transform duration-500 hover:scale-110" />

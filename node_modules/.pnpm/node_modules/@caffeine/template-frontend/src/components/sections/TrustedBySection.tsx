@@ -2,7 +2,7 @@ export function TrustedBySection() {
   const logos = [
     {
       name: "Amazon",
-      src: "/assets/clients/Amazon.png",
+      src: "/assets/clients/amazon-logo.png",
     },
     {
       name: "Antstack",
@@ -51,7 +51,7 @@ export function TrustedBySection() {
                 src={logo.src}
                 alt={`${logo.name} logo`}
                 loading="lazy"
-                className="h-16 w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="h-24 w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}

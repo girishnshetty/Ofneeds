@@ -11,56 +11,56 @@ const products = [
     price: "₹299",
     moq: "MOQ: 50 pcs",
     icon: Shirt,
-    image: "/assets/products/tshirt.png",
+    image: "/assets/Widget images/tshirt.png",
   },
   {
     name: "Corporate Jacket",
     price: "₹899",
     moq: "MOQ: 25 pcs",
     icon: Shirt,
-    image: "/assets/products/Jacket photo.png",
+    image: "/assets/Widget images/Jacket.png",
   },
   {
     name: "Embroidered Cap",
     price: "₹199",
     moq: "MOQ: 50 pcs",
     icon: Award,
-    image: "/assets/products/caps.png",
+    image: "/assets/Widget images/caps.png",
   },
   {
     name: "Steel Sipper Bottle",
     price: "₹249",
     moq: "MOQ: 50 pcs",
     icon: Package,
-    image: "/assets/products/sipper bottle.png",
+    image: "/assets/Widget images/sipper_bottle.png",
   },
   {
     name: "Back Bags",
     price: "₹799",
     moq: "MOQ: 50 pcs",
     icon: Briefcase,
-    image: "/assets/products/bag packs.png",
+    image: "/assets/Widget images/bag_packs.png",
   },
   {
     name: "Crystal Trophy",
     price: "₹899",
     moq: "MOQ: 10 pcs",
     icon: Award,
-    image: "/assets/products/trophys.png",
+    image: "/assets/Widget images/trophys.png",
   },
   {
     name: "Premium Notebook",
     price: "₹249",
     moq: "MOQ: 50 pcs",
     icon: Package,
-    image: "/assets/products/notebook.png",
+    image: "/assets/Widget images/notebook.png",
   },
   {
     name: "Eco Tote Bag",
     price: "₹179",
     moq: "MOQ: 50 pcs",
     icon: Leaf,
-    image: "/assets/products/tote bag.png",
+    image: "/assets/Widget images/tote_bag.png",
   },
 ];
 
@@ -98,7 +98,7 @@ export function ProductsSection() {
               data-ocid={`product.item.${i + 1}`}
             >
               <div
-                className="relative flex h-56 w-full items-center justify-center overflow-hidden p-6 bg-white"
+                className="relative flex h-64 w-full items-center justify-center overflow-hidden p-4 bg-white"
               >
                 {p.image ? (
                   <img src={p.image} alt={p.name} className="h-full w-full object-contain transition-transform duration-500 hover:scale-110" />

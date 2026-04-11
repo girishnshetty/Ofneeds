@@ -35,13 +35,16 @@ export function Navbar() {
         <Link
           to="/"
           onClick={() => isHome && scrollTo("home")}
-          className="flex items-center gap-4 focus:outline-none transition-transform duration-300 hover:scale-[1.02]"
+          className="flex items-center gap-4 focus:outline-none"
           aria-label="OfNeeds - Corporate gifting company India"
           data-ocid="nav.link"
         >
-          <div className="flex items-center">
-            <img src="/assets/gift-box-logo.png" alt="OfNeeds Icon" className="h-10 lg:h-12 object-contain" />
-            <img src="/assets/Ofneeds.png" alt="OfNeeds Brand" className="h-6 lg:h-8 w-auto object-contain brightness-0 invert" />
+          <div className="flex items-center gap-2">
+            <img
+              src="/assets/ofneeds-official-logo.png"
+              alt="OfNeeds Logo"
+              className="h-10 lg:h-12 w-auto object-contain brightness-110"
+            />
           </div>
         </Link>
 

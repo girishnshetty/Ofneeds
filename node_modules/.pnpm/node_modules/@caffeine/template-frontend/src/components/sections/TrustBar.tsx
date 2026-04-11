@@ -5,7 +5,7 @@ export function TrustBar() {
     "8+ Years Experience",
   ];
   return (
-    <div className="border-b border-white/10 bg-primary/90 backdrop-blur-md">
+    <div className="border-b border-white/10 bg-primary/50 backdrop-blur-md">
       <div className="flex w-full items-center justify-center gap-0 overflow-x-auto px-6 py-2.5">
         {items.map((item, i) => (
           <div key={item} className="flex items-center">

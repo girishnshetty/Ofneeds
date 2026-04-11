@@ -72,7 +72,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground mb-1">EMAIL</p>
-                    <p className="font-semibold text-primary">hello@ofneeds.com</p>
+                    <a href="mailto:hello@ofneeds.com" className="font-semibold text-primary hover:text-accent transition-colors duration-200">hello@ofneeds.com</a>
                   </div>
                 </div>
 
@@ -246,8 +246,11 @@ export function ContactSection() {
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="welcome-kits">Welcome Kits</SelectItem>
-                      <SelectItem value="merchandise">Merchandise</SelectItem>
-                      <SelectItem value="bulk-gifts">Bulk Gifts</SelectItem>
+                      <SelectItem value="apparel">Apparel</SelectItem>
+                      <SelectItem value="accessories">Accessories</SelectItem>
+                      <SelectItem value="trophies-awards">Trophies & Awards</SelectItem>
+                      <SelectItem value="eco-friendly">Eco-Friendly Gifts</SelectItem>
+                      <SelectItem value="custom-bundle">Custom Bundle</SelectItem>
                       <SelectItem value="other">Other Inquiry</SelectItem>
                     </SelectContent>
                   </Select>

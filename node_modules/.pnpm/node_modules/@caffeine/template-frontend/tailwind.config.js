@@ -10,10 +10,10 @@ export default {
     container: { center: true, padding: '2rem', screens: { '2xl': '1400px' } },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        display: ['"Outfit"', 'system-ui', 'sans-serif'],
         body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        serif: ['"Outfit"', 'system-ui', 'sans-serif'],
         comfortaa: ['"Comfortaa"', 'cursive', 'sans-serif'],
       },
       colors: {

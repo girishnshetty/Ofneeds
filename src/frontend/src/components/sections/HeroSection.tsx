@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 
 function scrollTo(id: string) {
@@ -40,19 +40,16 @@ export function HeroSection() {
                 animate={{
                   opacity: 1,
                   scale: 1,
-                  y: [0, -8, 0]
                 }}
                 transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut"
+                  duration: 0.5,
                 }}
                 className="group relative flex w-fit items-center gap-3 rounded-full bg-gradient-to-r from-accent/20 to-accent/5 px-7 py-4 backdrop-blur-md border border-accent/30 shadow-[0_0_20px_rgba(222,147,61,0.15)] hover:shadow-[0_0_25px_rgba(222,147,61,0.25)] transition-all duration-500 cursor-pointer"
               >
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-accent/0 via-accent/20 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 animate-shimmer" />
 
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-white shadow-lg animate-bounce group-hover:scale-110 transition-transform">
-                  <Heart size={18} fill="currentColor" />
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <Sparkles size={18} fill="currentColor" />
                 </span>
 
                 <span className="text-base font-black uppercase tracking-widest text-primary md:text-lg">

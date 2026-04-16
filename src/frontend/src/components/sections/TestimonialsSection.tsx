@@ -13,18 +13,18 @@ const testimonials = [
   {
     quote:
       "We've ordered 500+ kits through OfNeeds and the consistency in quality is remarkable. Our employees always ask where we source these beautiful gifts.",
-    name: "Rahul Mehta",
+    name: "Gladwin Bosco",
     role: "Operations Manager",
-    company: "StartupHub",
-    initials: "RM",
+    company: "AntStack",
+    initials: "GB",
   },
   {
     quote:
       "Best vendor for merchandise. On-time delivery, great quality, and their account manager is super responsive. Highly recommend for bulk corporate orders.",
-    name: "Anita Patel",
-    role: "Procurement Head",
-    company: "MNC Corp",
-    initials: "AP",
+    name: "Anand Sunkad",
+    role: "Operations Head",
+    company: "Amazon",
+    initials: "AS",
   },
 ];
 

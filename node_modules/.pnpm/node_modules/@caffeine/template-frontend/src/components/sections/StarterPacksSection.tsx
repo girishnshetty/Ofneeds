@@ -41,7 +41,7 @@ export function StarterPacksSection() {
     <section
       id="starter-packs"
       aria-label="Ready-to-ship starter packs"
-      className="bg-primary py-20 lg:py-28"
+      className="bg-primary pt-6 lg:pt-8 pb-20 lg:pb-28"
     >
       <div className="w-full px-6 sm:px-10 lg:px-16 xl:px-24">
         <motion.div
@@ -51,9 +51,6 @@ export function StarterPacksSection() {
           transition={{ duration: 0.5 }}
           className="mb-14 text-center"
         >
-          <span className="mb-3 inline-block rounded-full bg-accent/20 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-accent">
-            Ready to Ship
-          </span>
           <h2 className="font-display mt-3 text-3xl font-bold text-white sm:text-4xl">
             Starter Packs for Employees
           </h2>

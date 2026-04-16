@@ -30,8 +30,13 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-primary/95 backdrop-blur-md transition-all duration-300">
-      <div className="flex h-14 lg:h-16 w-full items-center justify-between px-4 lg:px-10 xl:px-16">
+    <header className="sticky top-0 z-50 w-full shadow-md transition-all duration-300">
+      <div className="bg-accent py-1.5 text-center">
+        <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-accent-foreground">
+          ★ Start your welcome kit from Just ₹699 ★
+        </p>
+      </div>
+      <div className="flex h-14 lg:h-16 w-full items-center justify-between bg-primary/95 backdrop-blur-md px-4 lg:px-10 xl:px-16">
         <Link
           to="/"
           onClick={() => isHome && scrollTo("home")}
@@ -85,7 +90,7 @@ export function Navbar() {
             className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-all duration-200 hover:brightness-110 active:scale-95"
             data-ocid="nav.primary_button"
           >
-            Get a Quote
+            GET A QUOTE
           </Link>
         </div>
 
@@ -135,7 +140,7 @@ export function Navbar() {
                 className="mt-2 w-full rounded-lg bg-accent px-5 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground text-center"
                 data-ocid="nav.primary_button"
               >
-                Get a Quote
+                GET A QUOTE
               </Link>
             </nav>
           </motion.div>

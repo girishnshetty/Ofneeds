@@ -32,21 +32,21 @@ const products = [
     price: "₹249",
     moq: "MOQ: 50 pcs",
     icon: Package,
-    image: "/assets/Widget images/sipper_bottle.png",
+    image: "/assets/Widget images/Steel_sipper_bottle.png",
   },
   {
     name: "Back Bags",
     price: "₹799",
     moq: "MOQ: 50 pcs",
     icon: Briefcase,
-    image: "/assets/Widget images/bag_packs.png",
+    image: "/assets/Widget images/Back_Bags.png",
   },
   {
     name: "Crystal Trophy",
     price: "₹899",
     moq: "MOQ: 10 pcs",
     icon: Award,
-    image: "/assets/Widget images/trophys.png",
+    image: "/assets/Widget images/Trophy.png",
   },
   {
     name: "Premium Notebook",
@@ -60,7 +60,7 @@ const products = [
     price: "₹179",
     moq: "MOQ: 50 pcs",
     icon: Leaf,
-    image: "/assets/Widget images/tote_bag.png",
+    image: "/assets/Widget images/Eco_Tote_Bag.png",
   },
 ];
 
@@ -120,10 +120,10 @@ export function ProductsSection() {
                 <button
                   type="button"
                   onClick={() => scrollTo("contact")}
-                  className="mt-3 w-full rounded-lg bg-primary py-2 text-xs font-semibold uppercase tracking-wide text-primary-foreground transition-all duration-200 hover:opacity-90"
+                  className="mt-3 w-full rounded-lg bg-accent py-2 text-xs font-semibold uppercase tracking-wide text-accent-foreground transition-all duration-200 hover:opacity-90"
                   data-ocid={`product.button.${i + 1}`}
                 >
-                  Get Quote
+                  GET A QUOTE
                 </button>
               </div>
             </motion.div>

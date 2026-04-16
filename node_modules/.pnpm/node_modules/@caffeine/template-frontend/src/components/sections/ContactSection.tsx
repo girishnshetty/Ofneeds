@@ -18,6 +18,32 @@ import { useSubmitInquiry } from "../../hooks/useSubmitInquiry";
 export function ContactSection() {
   const submitInquiry = useSubmitInquiry();
   const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+  });
+
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    // Allow only alphabets and spaces
+    const cleanValue = value.replace(/[^a-zA-Z\s]/g, "");
+    setFormData(prev => ({ ...prev, name: cleanValue }));
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    // Allow only digits
+    const cleanValue = value.replace(/[^0-9]/g, "");
+    setFormData(prev => ({ ...prev, phone: cleanValue }));
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    // Allow only alphabets, numbers, . and @
+    const cleanValue = value.replace(/[^a-zA-Z0-9.@]/g, "");
+    setFormData(prev => ({ ...prev, email: cleanValue }));
+  };
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -37,6 +63,7 @@ export function ContactSection() {
       await submitInquiry.mutateAsync(data);
       toast.success("Inquiry sent successfully! Our team will contact you soon.");
       (e.target as HTMLFormElement).reset();
+      setFormData({ name: "", phone: "", email: "" });
     } catch (error) {
       toast.error("Failed to send inquiry. Please try again later.");
     } finally {
@@ -197,6 +224,8 @@ export function ContactSection() {
                   <Input
                     id="name"
                     name="name"
+                    value={formData.name}
+                    onChange={handleNameChange}
                     placeholder="Priya Sharma"
                     className="bg-white border-gray-200 focus:border-accent"
                     required
@@ -221,6 +250,8 @@ export function ContactSection() {
                     id="email"
                     name="email"
                     type="email"
+                    value={formData.email}
+                    onChange={handleEmailChange}
                     placeholder="priya@techcorp.in"
                     className="bg-white border-gray-200 focus:border-accent"
                     required
@@ -231,6 +262,8 @@ export function ContactSection() {
                   <Input
                     id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handlePhoneChange}
                     placeholder="+91 70907 95666"
                     className="bg-white border-gray-200 focus:border-accent"
                   />

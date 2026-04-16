@@ -13,7 +13,7 @@ export function StarterPacksSection() {
       imageAlt:
         "Premium corporate welcome kit India - Customized employee gift set by OfNeeds",
       title: "Essential Welcome Kit",
-      price: "₹599",
+      price: "₹699",
       includes: ["T-Shirt", "Notebook", "Pen", "Welcome Card"],
       ocid: "pack.item.1",
       btnOcid: "pack.primary_button.1",
@@ -24,7 +24,7 @@ export function StarterPacksSection() {
       imageAlt:
         "Luxury corporate gift set for employees - Premium welcome kit India",
       title: "Premium Welcome Kit",
-      price: "₹1199",
+      price: "₹1299",
       includes: [
         "Polo T-Shirt",
         "Premium Notebook",
@@ -124,7 +124,7 @@ export function StarterPacksSection() {
                     className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-accent-foreground transition-all duration-200 hover:opacity-90"
                     data-ocid={pack.btnOcid}
                   >
-                    Order Now
+                    GET A QUOTE
                   </button>
                 </div>
               </div>

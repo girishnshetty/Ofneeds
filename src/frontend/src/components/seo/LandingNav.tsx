@@ -54,7 +54,7 @@ export default function LandingNav() {
             className="text-sm font-bold px-5 py-2 rounded-lg transition-opacity hover:opacity-90 inline-block"
             style={{ background: "#c9a84c", color: "#1a2744" }}
           >
-            Get a Quote
+            GET A QUOTE
           </a>
         </div>
 
@@ -90,7 +90,7 @@ export default function LandingNav() {
               className="block w-full text-center font-bold px-5 py-2 rounded-lg text-sm"
               style={{ background: "#c9a84c", color: "#1a2744" }}
             >
-              Get a Quote
+              GET A QUOTE
             </a>
           </div>
         </div>
